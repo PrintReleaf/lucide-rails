@@ -71,10 +71,10 @@ def clone!
   FileUtils.mv Dir.glob("tmp/lucide/icons/*.svg"), "icons/original"
 end
 
-def strip!
+def strip!(dir)
   compressed_data = StringIO.new
 
-  Dir.glob("icons/{custom,original}/*.svg").each do |input|
+  Dir.glob("icons/#{dir}/*.svg").each do |input|
     File.open("icons/stripped/#{File.basename(input)}", "wb") do |output|
       contents = File.read(input)
       Nokogiri::HTML::DocumentFragment.parse(contents).tap do |svg|
@@ -220,7 +220,8 @@ FileUtils.chdir GEM_ROOT do
   FileUtils.mkdir_p "icons/stripped"
 
   clone!
-  strip!
+  strip!("original")
+  strip!("custom")
   changes = extract_changes!
   update_changelog!(changes)
   commit!
