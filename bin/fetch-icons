@@ -50,7 +50,7 @@ end
 
 def clone!
   puts "Clonning lucide-icons/lucide..."
-  system! "git clone --depth 1 https://github.com/lucide-icons/lucide tmp/lucide"
+  system! "git clone https://github.com/lucide-icons/lucide tmp/lucide"
 
   puts "Checkout out latest version..."
   tag = FileUtils.chdir "tmp/lucide" do
@@ -74,7 +74,7 @@ end
 def strip!
   compressed_data = StringIO.new
 
-  Dir.glob("icons/original/*.svg").each do |input|
+  Dir.glob("icons/{custom,original}/*.svg").each do |input|
     File.open("icons/stripped/#{File.basename(input)}", "wb") do |output|
       contents = File.read(input)
       Nokogiri::HTML::DocumentFragment.parse(contents).tap do |svg|
@@ -108,6 +108,7 @@ def extract_changes!
 
   status = system!("git status --porcelain")
            .split("\n")
+           .filter { _1 =~ %r{icons/custom} }
            .filter { _1 =~ %r{icons/original} }
            .map(&:strip)
            .map { _1.split(" ", 2) }
@@ -214,6 +215,7 @@ end
 
 FileUtils.chdir GEM_ROOT do
   FileUtils.rm_rf Dir.glob("#{GEM_ROOT}/tmp/*")
+  FileUtils.mkdir_p "icons/custom"
   FileUtils.mkdir_p "icons/original"
   FileUtils.mkdir_p "icons/stripped"
 

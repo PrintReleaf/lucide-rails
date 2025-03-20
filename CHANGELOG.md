@@ -1,3 +1,33 @@
+## [0.6.1] - 2025-03-19
+
+### Added
+ - `circle-small`
+ - `clock-fading`
+ - `funnel-plus`
+ - `funnel-x`
+ - `funnel`
+ - `mars-stroke`
+ - `mars`
+ - `non-binary`
+ - `saudi-riyal`
+ - `shield-user`
+ - `shrimp`
+ - `square-round-corner`
+ - `transgender`
+ - `venus-and-mars`
+ - `venus`
+ - `carbon`
+
+### Updated
+ - `beef`
+ - `brackets`
+ - `circle-slash-2`
+ - `expand`
+ - `infinity`
+ - `newspaper`
+ - `package`
+ - `carbon`
+
 ## [0.6.0] - 2025-01-17
 
 ### Added
