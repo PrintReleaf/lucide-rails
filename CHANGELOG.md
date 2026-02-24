@@ -1,32 +1,605 @@
-## [0.6.1] - 2025-03-19
+## [0.7.3]
+
+This release mainly updates dependencies, but contains the same contents of `v0.7.2`. 
+
+Updated dependencies:
+- `rexml`: `3.3.9` -> `3.4.4`
+- `nokogiri`: `1.16.7` -> `1.18.10`
+- `racc`: `1.8.0` -> `1.8.1`
+- `rack`: `3.1.7` -> `3.2.4`
+
+## [0.7.2]
 
 ### Added
+ - `badge-turkish-lira`
+ - `balloon`
+ - `birdhouse`
+ - `book-search`
+ - `brick-wall-shield`
+ - `calendars`
+ - `cannabis-off`
+ - `chess-bishop`
+ - `chess-king`
+ - `chess-knight`
+ - `chess-pawn`
+ - `chess-queen`
+ - `chess-rook`
+ - `chromium`
+ - `circle-pile`
+ - `circle-star`
+ - `clipboard-clock`
+ - `clock-check`
+ - `closed-caption`
+ - `cloud-backup`
+ - `cloud-sync`
+ - `ev-charger`
+ - `file-braces-corner`
+ - `file-braces`
+ - `file-check-corner`
+ - `file-code-corner`
+ - `file-exclamation-point`
+ - `file-headphone`
+ - `file-minus-corner`
+ - `file-play`
+ - `file-plus-corner`
+ - `file-search-corner`
+ - `file-signal`
+ - `file-type-corner`
+ - `file-video-camera`
+ - `file-x-corner`
+ - `fingerprint-pattern`
+ - `fishing-hook`
+ - `form`
+ - `gamepad-directional`
+ - `git-branch-minus`
+ - `hand-fist`
+ - `hand-grab`
+ - `handbag`
+ - `hat-glasses`
+ - `hd`
+ - `helicopter`
+ - `house-heart`
+ - `kayak`
+ - `layers-plus`
+ - `list-chevrons-down-up`
+ - `list-chevrons-up-down`
+ - `list-indent-decrease`
+ - `list-indent-increase`
+ - `map-minus`
+ - `map-pin-pen`
+ - `monitor-cloud`
+ - `motorbike`
+ - `mouse-pointer-2-off`
+ - `panel-left-right-dashed`
+ - `panel-top-bottom-dashed`
+ - `receipt-turkish-lira`
+ - `rose`
+ - `scooter`
+ - `search-alert`
+ - `solar-panel`
+ - `spotlight`
+ - `square-pause`
+ - `square-star`
+ - `square-stop`
+ - `stone`
+ - `text-align-center`
+ - `text-align-end`
+ - `text-align-justify`
+ - `text-align-start`
+ - `text-initial`
+ - `text-wrap`
+ - `tool-case`
+ - `toolbox`
+ - `turkish-lira`
+ - `turntable`
+ - `user-star`
+ - `van`
+ - `vector-square`
+ - `waves-arrow-down`
+ - `waves-arrow-up`
+ - `weight-tilde`
+ - `wifi-sync`
+
+### Updated
+ - `a-arrow-down`
+ - `a-arrow-up`
+ - `a-large-small`
+ - `ampersand`
+ - `anchor`
+ - `apple`
+ - `arrow-big-down-dash`
+ - `arrow-big-down`
+ - `arrow-big-left-dash`
+ - `arrow-big-left`
+ - `arrow-big-right-dash`
+ - `arrow-big-right`
+ - `arrow-big-up-dash`
+ - `arrow-big-up`
+ - `ban`
+ - `book-copy`
+ - `book-heart`
+ - `bot-message-square`
+ - `brain`
+ - `brush-cleaning`
+ - `bubbles`
+ - `bug-off`
+ - `bug-play`
+ - `bug`
+ - `building-2`
+ - `building`
+ - `cable`
+ - `cake-slice`
+ - `calendar-clock`
+ - `calendar-cog`
+ - `calendar-fold`
+ - `calendar-heart`
+ - `camera-off`
+ - `camera`
+ - `case-lower`
+ - `case-sensitive`
+ - `case-upper`
+ - `castle`
+ - `chart-no-axes-column-decreasing`
+ - `chart-no-axes-column-increasing`
+ - `chart-no-axes-column`
+ - `chart-no-axes-gantt`
+ - `church`
+ - `circle-parking-off`
+ - `circle-play`
+ - `clock-1`
+ - `clock-10`
+ - `clock-11`
+ - `clock-12`
+ - `clock-2`
+ - `clock-3`
+ - `clock-4`
+ - `clock-5`
+ - `clock-6`
+ - `clock-7`
+ - `clock-8`
+ - `clock-9`
+ - `clock-alert`
+ - `clock-arrow-down`
+ - `clock-arrow-up`
+ - `clock`
+ - `cloud-moon-rain`
+ - `cloud-moon`
+ - `cog`
+ - `combine`
+ - `croissant`
+ - `dessert`
+ - `fast-forward`
+ - `file-archive`
+ - `file-axis-3d`
+ - `file-badge`
+ - `file-box`
+ - `file-chart-column-increasing`
+ - `file-chart-column`
+ - `file-chart-line`
+ - `file-chart-pie`
+ - `file-check`
+ - `file-clock`
+ - `file-code`
+ - `file-cog`
+ - `file-diff`
+ - `file-digit`
+ - `file-down`
+ - `file-heart`
+ - `file-image`
+ - `file-input`
+ - `file-key`
+ - `file-lock`
+ - `file-minus`
+ - `file-music`
+ - `file-output`
+ - `file-pen-line`
+ - `file-pen`
+ - `file-plus`
+ - `file-question-mark`
+ - `file-scan`
+ - `file-search`
+ - `file-sliders`
+ - `file-spreadsheet`
+ - `file-stack`
+ - `file-symlink`
+ - `file-terminal`
+ - `file-text`
+ - `file-type`
+ - `file-up`
+ - `file-user`
+ - `file-volume`
+ - `file-x`
+ - `file`
+ - `files`
+ - `flag-off`
+ - `flag-triangle-left`
+ - `flag-triangle-right`
+ - `flag`
+ - `flame`
+ - `flashlight-off`
+ - `flashlight`
+ - `folder-clock`
+ - `folder-git-2`
+ - `folder-heart`
+ - `folder-symlink`
+ - `folders`
+ - `fuel`
+ - `gavel`
+ - `gem`
+ - `hammer`
+ - `hand-heart`
+ - `heart-crack`
+ - `heart-handshake`
+ - `heart-minus`
+ - `heart-off`
+ - `heart-plus`
+ - `heart-pulse`
+ - `heart`
+ - `hospital`
+ - `house-plug`
+ - `house-plus`
+ - `house-wifi`
+ - `house`
+ - `image-play`
+ - `images`
+ - `kanban`
+ - `lasso`
+ - `ligature`
+ - `list-check`
+ - `list-checks`
+ - `list-collapse`
+ - `list-end`
+ - `list-filter-plus`
+ - `list-filter`
+ - `list-minus`
+ - `list-music`
+ - `list-ordered`
+ - `list-plus`
+ - `list-restart`
+ - `list-start`
+ - `list-todo`
+ - `list-tree`
+ - `list-video`
+ - `list-x`
+ - `list`
+ - `logs`
+ - `magnet`
+ - `mails`
+ - `megaphone-off`
+ - `megaphone`
+ - `memory-stick`
+ - `menu`
+ - `message-circle-code`
+ - `message-circle-dashed`
+ - `message-circle-heart`
+ - `message-circle-more`
+ - `message-circle-off`
+ - `message-circle-plus`
+ - `message-circle-question-mark`
+ - `message-circle-reply`
+ - `message-circle-warning`
+ - `message-circle-x`
+ - `message-circle`
+ - `message-square-code`
+ - `message-square-dashed`
+ - `message-square-diff`
+ - `message-square-dot`
+ - `message-square-heart`
+ - `message-square-lock`
+ - `message-square-more`
+ - `message-square-off`
+ - `message-square-plus`
+ - `message-square-quote`
+ - `message-square-reply`
+ - `message-square-share`
+ - `message-square-text`
+ - `message-square-warning`
+ - `message-square-x`
+ - `message-square`
+ - `messages-square`
+ - `mic-off`
+ - `microchip`
+ - `monitor-dot`
+ - `monitor-play`
+ - `moon-star`
+ - `moon`
+ - `paint-bucket`
+ - `pause`
+ - `pen-line`
+ - `pencil-line`
+ - `pickaxe`
+ - `play`
+ - `plug`
+ - `podcast`
+ - `receipt-text`
+ - `refresh-ccw-dot`
+ - `replace-all`
+ - `replace`
+ - `rewind`
+ - `ruler-dimension-line`
+ - `sailboat`
+ - `scale`
+ - `scan-heart`
+ - `school`
+ - `settings`
+ - `shovel`
+ - `shredder`
+ - `shrub`
+ - `skip-back`
+ - `skip-forward`
+ - `sliders-horizontal`
+ - `sliders-vertical`
+ - `spade`
+ - `sparkle`
+ - `sparkles`
+ - `sprout`
+ - `square-bottom-dashed-scissors`
+ - `square-m`
+ - `square-play`
+ - `square-scissors`
+ - `step-back`
+ - `step-forward`
+ - `sticker`
+ - `sticky-note`
+ - `store`
+ - `sun-moon`
+ - `sword`
+ - `table-of-contents`
+ - `tags`
+ - `text-quote`
+ - `text-search`
+ - `thermometer-sun`
+ - `thumbs-down`
+ - `thumbs-up`
+ - `tickets-plane`
+ - `tickets`
+ - `trash-2`
+ - `trash`
+ - `tv-minimal-play`
+ - `umbrella-off`
+ - `umbrella`
+ - `wallpaper`
+ - `watch`
+ - `wrench`
+
+## [0.7.1] - 2025-06-25
+
+- Updated webrick dependency to 1.8.2. This release has the same contents as 0.7.0.
+
+## [0.7.0] - 2025-06-25
+
+### Added
+ - `badge-question-mark`
+ - `banknote-arrow-down`
+ - `banknote-arrow-up`
+ - `banknote-x`
+ - `barrel`
+ - `book-alert`
+ - `bottle-wine`
+ - `bow-arrow`
+ - `brick-wall-fire`
+ - `brush-cleaning`
+ - `bubbles`
+ - `card-sim`
+ - `check-line`
+ - `circle-pound-sterling`
+ - `circle-question-mark`
  - `circle-small`
  - `clock-fading`
+ - `clock-plus`
+ - `cloud-check`
+ - `columns-3-cog`
+ - `decimals-arrow-left`
+ - `decimals-arrow-right`
+ - `door-closed-locked`
+ - `drone`
+ - `file-question-mark`
  - `funnel-plus`
  - `funnel-x`
  - `funnel`
+ - `georgian-lari`
+ - `gpu`
+ - `grid-3x2`
+ - `hamburger`
+ - `heart-minus`
+ - `heart-plus`
+ - `id-card-lanyard`
+ - `line-squiggle`
+ - `location-edit`
+ - `mail-question-mark`
  - `mars-stroke`
  - `mars`
+ - `message-circle-question-mark`
  - `non-binary`
+ - `panda`
+ - `rectangle-circle`
+ - `rectangle-goggles`
+ - `rotate-ccw-key`
+ - `ruler-dimension-line`
  - `saudi-riyal`
+ - `shield-question-mark`
  - `shield-user`
+ - `shredder`
  - `shrimp`
+ - `soap-dispenser-droplet`
+ - `spline-pointer`
+ - `spool`
+ - `square-dashed-top-solid`
  - `square-round-corner`
+ - `squares-exclude`
+ - `squares-intersect`
+ - `squares-subtract`
+ - `squares-unite`
+ - `squircle-dashed`
  - `transgender`
+ - `truck-electric`
+ - `user-lock`
  - `venus-and-mars`
  - `venus`
- - `carbon`
+ - `wifi-cog`
+ - `wifi-pen`
 
 ### Updated
+ - `air-vent`
+ - `axe`
+ - `axis-3d`
+ - `baby`
+ - `battery-charging`
+ - `battery-full`
+ - `battery-low`
+ - `battery-medium`
+ - `battery-plus`
+ - `battery-warning`
+ - `battery`
  - `beef`
+ - `bell-electric`
+ - `blocks`
+ - `book-key`
  - `brackets`
+ - `brain-cog`
+ - `brush`
+ - `calendar-cog`
+ - `calendar-plus`
+ - `candy-off`
+ - `candy`
+ - `chevrons-left-right-ellipsis`
+ - `circle-arrow-left`
+ - `circle-arrow-right`
  - `circle-slash-2`
+ - `clipboard-paste`
+ - `clock-6`
+ - `cloud-cog`
+ - `code`
+ - `corner-down-left`
+ - `corner-down-right`
+ - `corner-left-down`
+ - `corner-left-up`
+ - `corner-right-down`
+ - `corner-right-up`
+ - `corner-up-left`
+ - `corner-up-right`
+ - `cpu`
+ - `door-closed`
+ - `door-open`
+ - `download`
+ - `dumbbell`
+ - `egg-off`
+ - `egg`
+ - `eraser`
  - `expand`
+ - `factory`
+ - `file-badge-2`
+ - `file-badge`
+ - `file-cog`
+ - `folder-cog`
+ - `forward`
+ - `guitar`
+ - `house-plus`
  - `infinity`
+ - `iteration-ccw`
+ - `iteration-cw`
+ - `lamp-ceiling`
+ - `lamp-desk`
+ - `lamp-floor`
+ - `lamp-wall-down`
+ - `lamp-wall-up`
+ - `lamp`
+ - `landmark`
+ - `laptop`
+ - `layers-2`
+ - `letter-text`
+ - `list-collapse`
+ - `locate-off`
+ - `log-in`
+ - `log-out`
+ - `mail`
+ - `maximize-2`
+ - `menu`
+ - `mic`
+ - `minimize-2`
+ - `monitor-cog`
  - `newspaper`
+ - `orbit`
+ - `package-2`
  - `package`
- - `carbon`
+ - `palette`
+ - `paperclip`
+ - `phone-call`
+ - `phone-forwarded`
+ - `phone-incoming`
+ - `phone-missed`
+ - `phone-off`
+ - `phone-outgoing`
+ - `phone`
+ - `piggy-bank`
+ - `pipette`
+ - `pocket`
+ - `radiation`
+ - `radio`
+ - `reply-all`
+ - `reply`
+ - `satellite`
+ - `search`
+ - `separator-horizontal`
+ - `separator-vertical`
+ - `server-cog`
+ - `settings-2`
+ - `share`
+ - `shopping-bag`
+ - `square-check-big`
+ - `square-code`
+ - `stamp`
+ - `terminal`
+ - `text-cursor-input`
+ - `text-select`
+ - `text`
+ - `toggle-left`
+ - `toggle-right`
+ - `touchpad-off`
+ - `traffic-cone`
+ - `trending-down`
+ - `trending-up`
+ - `trophy`
+ - `tv`
+ - `type`
+ - `university`
+ - `upload`
+ - `user-check`
+ - `user-cog`
+ - `user-round-cog`
+ - `users`
+ - `warehouse`
+ - `wrap-text`
+
+## [0.6.1] - 2025-03-19
+
+### Added
+- `circle-small`
+- `clock-fading`
+- `funnel-plus`
+- `funnel-x`
+- `funnel`
+- `mars-stroke`
+- `mars`
+- `non-binary`
+- `saudi-riyal`
+- `shield-user`
+- `shrimp`
+- `square-round-corner`
+- `transgender`
+- `venus-and-mars`
+- `venus`
+- `carbon`
+
+### Updated
+- `beef`
+- `brackets`
+- `circle-slash-2`
+- `expand`
+- `infinity`
+- `newspaper`
+- `package`
+- `carbon`
 
 ## [0.6.0] - 2025-01-17
 
